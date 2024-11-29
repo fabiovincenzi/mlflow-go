@@ -11,7 +11,7 @@ jobs:
     name: Test Go
     strategy:
       matrix:
-        runner: [macos-latest, ubuntu-latest, windows-latest]
+        runner: [self-hosted, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
